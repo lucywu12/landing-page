@@ -1,13 +1,45 @@
 body {
+    margin: 0;
+
     display: flex;
     flex-direction: column;
 }
 
 .header {
-    
     background-color: #1F2937;
 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
+    padding: 4px 40px;
+}
+
+.banner {
+    width: 100%; 
+    margin: 30px 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.links {
+    display: flex;
+    gap: 30px;
+}
+
+.hero {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.right {
+    display: flex;
+    align-items: center;
 }
 
 .information {
@@ -15,8 +47,6 @@ body {
 
     display: flex;
     flex-direction: column;
-    
-    
 }
 
 .buckets {
@@ -29,51 +59,115 @@ body {
 
 .bucket {
     width: 200px;
+    
 
     display: flex;
     flex-direction: column;
 }
 
+.quote{
+    display: flex;
+    background-color: #E5E7EB;
+    text-align: left;
+    align-items: center;
+    padding: 4px 40px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.credit{
+    text-align: right;
+}
+
+.action{
+    background-color: #3882F6;
+    margin: 20px 40px;
+    padding: 10px 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .footer {
     background-color: #1F2937;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.banner h4 {
+    display: flex;
+}
+
+.footer h5 {
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Roboto", "Arial", "Sans-Serif";
+    margin: 0;
+}
+
+/* Hero main text */
 h1 {
     font-size: 48px;
+    color: #F9FAF8;
+    font-weight: bolder;
 }
 
+/* Information header */
 h2 {
-    font-size: 36 px;
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: bolder;
 }
 
+/* Quote text */
 h3 {
-    font-size: 24px;
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: lighter;
 }
 
+/* Header logo */
 h4 {
-    font-size: 18px;
+    font-size: 24px;
+    color: #F9FAF8;
 }
 
+/* Hero secondary, header link */
 h5 {
+    font-size: 18px;
+    font-weight: lighter;
+    color: #E5E7EB;
+}
 
+/* Regular text */
+h6 {
+    font-size: 18px;
+    font-weight: lighter;
+    color: #1F2937;
 }
 
 #logo {
     width: 100px;
 }
 
+.right img {
+    width: 300px;
+}
+
 img {
     width: 200px;
 }
 
-a.head {
-    color: white;
-}
-
 a {
-    -webkit-appearance: button;
-    -moz-appearance: button;
-    appearance: button;
+    /* -webkit-appearance: button; */
+    /* -moz-appearance: button; */
+    /* appearance: button; */
 
     text-decoration: none;
     color: white;
