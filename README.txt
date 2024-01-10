@@ -3,4 +3,5 @@
 - Tribute to some of the most influential musical artists I listen to who shaped my life and musical taste
 
 
-Image credits
+Image credits go back to their respective artists.
+Theme was inspired by my 2023 Spotify Wrapped.

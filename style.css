@@ -1,24 +1,28 @@
 body {
+    background-color: rgb(77, 48, 128);
     margin: 0;
+    gap: 20px;
 
     display: flex;
     flex-direction: column;
 }
 
 .header {
-    background-color: #1F2937;
+    background-color: rgb(77, 48, 128);
+    /* height: 300px; */
 
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    padding: 4px 40px;
+    padding: 0px 40px;
+    padding-bottom: 30px;
 }
 
 .banner {
     width: 100%; 
     margin: 30px 0;
-
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -28,13 +32,22 @@ body {
 .links {
     display: flex;
     gap: 30px;
+    flex-wrap: nowrap;
+    
 }
 
 .hero {
+    gap: 40px;
     width: 100%;
+
     display: flex;
     justify-content: space-between;
-    
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .right {
@@ -43,7 +56,10 @@ body {
 }
 
 .information {
+    padding: 50px 0px;
+    gap: 50px;
     text-align: center;
+    background-color: #9c8fd5;
 
     display: flex;
     flex-direction: column;
@@ -54,26 +70,34 @@ body {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
-    gap: 40px;
+    gap: 20px;
+
+    
 }
 
 .bucket {
     width: 200px;
-    
+    gap: 10px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 3px solid rgb(243, 255, 77);
+    background-color: rgb(77, 48, 128);
 
     display: flex;
     flex-direction: column;
+    align-items: center;
+    
 }
 
 .quote{
-    display: flex;
-    background-color: #E5E7EB;
-    text-align: left;
-    align-items: center;
-    padding: 4px 40px;
+    background-color: rgb(77, 48, 128);
 
     display: flex;
     flex-direction: column;
+    text-align: left;
+    margin: 50px 0px;
+    padding: 4px 300px;
+    
 }
 
 .credit{
@@ -81,9 +105,11 @@ body {
 }
 
 .action{
-    background-color: #3882F6;
+    background-color: #9c8fd5;
     margin: 20px 40px;
-    padding: 10px 40px;
+    padding: 20px 40px;
+    border-radius: 10px;
+    border: 3px solid rgb(243, 255, 77);
 
     display: flex;
     align-items: center;
@@ -91,7 +117,9 @@ body {
 }
 
 .footer {
-    background-color: #1F2937;
+    background-color: rgb(77, 48, 128);
+    padding: 20px;
+    margin-top: 30px;
 
     display: flex;
     justify-content: center;
@@ -103,38 +131,40 @@ body {
 }
 
 .footer h5 {
+    /* more spacing */
+    margin-top: 40px;
     text-align: center;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Roboto", "Arial", "Sans-Serif";
+    font-family: "Trebuchet MS", "Arial", "Sans-Serif";
     margin: 0;
 }
 
 /* Hero main text */
 h1 {
-    font-size: 48px;
+    font-size: 32px;
     color: #F9FAF8;
     font-weight: bolder;
 }
 
 /* Information header */
 h2 {
-    font-size: 36px;
-    color: #1F2937;
+    font-size: 16px;
+    color: #F9FAF8;
     font-weight: bolder;
 }
 
 /* Quote text */
 h3 {
-    font-size: 36px;
-    color: #1F2937;
+    font-size: 24px;
+    color: #F9FAF8;
     font-weight: lighter;
 }
 
 /* Header logo */
 h4 {
-    font-size: 24px;
+    font-size: 18px;
     color: #F9FAF8;
 }
 
@@ -147,28 +177,33 @@ h5 {
 
 /* Regular text */
 h6 {
-    font-size: 18px;
+    font-size: 14px;
     font-weight: lighter;
-    color: #1F2937;
+    color: #E5E7EB;
 }
 
 #logo {
     width: 100px;
 }
 
-.right img {
+img {
     width: 300px;
+    border-radius: 10px;
+    border: 3px solid white;
 }
 
-img {
+.bucket img {
     width: 200px;
 }
 
 a {
-    /* -webkit-appearance: button; */
-    /* -moz-appearance: button; */
-    /* appearance: button; */
-
     text-decoration: none;
     color: white;
+}
+
+h4 a {
+    background-color: #f66e38;
+    border-radius: 20px;
+    width: 100px;
+    padding: 10px;    
 }
